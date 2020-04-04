@@ -1,1 +1,1 @@
-# Electricity Billing
+# Electric Billing

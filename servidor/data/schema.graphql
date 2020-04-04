@@ -1,0 +1,30 @@
+type ElectricBillingElement {
+  id: ID
+  date: String
+  hour: Float
+  ingestion: Float    
+  price: Float
+  cost: Float
+}
+
+type Query {
+  getElectricBillingElements(limit: Int, offset: Int) : [ElectricBillingElement]
+  getElectricBillingElement(id:ID) : ElectricBillingElement
+  totalElectricBillingElements : String
+}
+
+input ElectricBillingElementInput {
+  id: ID
+  date: String!
+  hour: Float!
+  ingestion: Float!  
+  price: Float!
+  cost: Float!
+}
+""" Mutations to create new electric billing elements """
+type Mutation {
+  #Resolver name, data input and return value
+  createElectricBillingElement(input: ElectricBillingElementInput) : ElectricBillingElement
+  updateElectricBillingElement(input: ElectricBillingElementInput) : ElectricBillingElement
+  removeElectricBillingElement(id: ID!) : String
+}
