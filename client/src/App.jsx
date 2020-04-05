@@ -9,6 +9,7 @@ import Header from './Components/Header';
 import ElectricBillingElements from './Components/ElectricBillingElements';
 import NewElectricBillingElement from './Components/NewElectricBillingElement';
 import EditElectricBillingElement from './Components/EditElectricBillingElement';
+import ElectricBillingGraph from './Components/ElectricBillingGraph';
 
 const client = new ApolloClient({
   uri: 'http://localhost:5000/graphql',
@@ -31,6 +32,7 @@ const App = () => (
             <Route exact path="/" component={ElectricBillingElements} />
             <Route exact path="/electricbillingelement/new" component={NewElectricBillingElement} />
             <Route exact path="/electricbillingelement/edit/:id" component={EditElectricBillingElement} />
+            <Route exact path="/electricbilling/graph" component={ElectricBillingGraph} />
           </Switch>
         </div>
       </>
