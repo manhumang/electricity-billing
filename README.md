@@ -37,15 +37,16 @@ Before load and launch the app you shold have installed Node and MongoDB.
 
 #### Server Side  
 
-1. Go to server folder  
-2. Execute npm install
-3. Execute npm run start  
+1. Launch `mongod` in a shell console to prepare the database
+2. Go to server folder  
+3. Execute `npm install` to install dependencies
+4. Execute `npm run start` to launch server
 
 #### Client Side  
 
 1. Go to client folder  
-2. Execute npm install
-3. Execute npm run start  
+2. Execute `npm install` to install dependencies
+3. Execute `npm run start` to launch client
 4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
